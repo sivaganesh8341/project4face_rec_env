@@ -1,0 +1,52 @@
+# ---- Virtual environment (this folder IS a venv) ----
+# Don't commit the venv itself; recreate it from requirements.txt.
+/Include/
+/Lib/
+/Scripts/
+/bin/
+/share/
+/lib64/
+pyvenv.cfg
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Environment / secrets ----
+.env
+.env.*
+*.local
+
+# ---- ML / face-recognition artifacts ----
+# Trained models, embeddings and datasets are usually large/binary.
+*.h5
+*.pb
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.dat
+/models/
+/weights/
+/embeddings/
+/dataset/
+/datasets/
+/data/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
